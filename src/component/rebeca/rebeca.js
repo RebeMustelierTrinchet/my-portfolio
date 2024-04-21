@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./rebeca.module.css"
 import R__Animation from "../../animaciones/R-animation/R-animation";
+import ParticlesBg from "../particlesBg/particlesBg";
 
 
 
@@ -16,7 +17,7 @@ export default  function Rebeca() {
                 type="video/mp4"
                 />
       </video> */}
-      {/* <ParticlesBg/> */}
+      <ParticlesBg/>
       <h2 className={styles.text}>Revolutionizing</h2>
       <h2 className={styles.text}>Every</h2>
       <h2 className={styles.text}>Byte,</h2>
