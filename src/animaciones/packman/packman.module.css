@@ -1,0 +1,92 @@
+.maincontainer{
+    width: 150px;
+    height: 60px;
+    /* background-color: brown; */
+    padding-left: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    position: fixed;
+    bottom: 150px;
+    right: 85px;
+    overflow: hidden;
+}
+
+.Packman_conteiner{
+    height: 45px;
+    width: 45px;
+   position: relative;
+   display: flex;
+}
+.Packman1,
+.Packman2{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    z-index: 1;
+}
+
+.packman2_conteiner{
+    position: absolute;
+    background-color: aqua;
+    animation: pacmanEating 0.3s infinite;
+    animation-timing-function: linear;
+    width: 0;
+    overflow: hidden;
+}
+@keyframes  pacmanEating  {
+    0%{
+        overflow: hidden;
+    }
+    100% {
+        overflow: visible;
+    }
+  }
+  
+
+  .food_conteiner{
+        height: 45px;
+        /* width: 95px; */
+        /* background-color: rgb(204, 255, 0); */
+       position: relative;
+       display: flex;
+       overflow: hidden;
+       margin-left: -15px;
+       
+       
+    
+  }
+
+  @keyframes  moveEating  {
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-49px);
+    }
+  }
+  
+
+  .windows{
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    /* background-color: white; */
+    animation: moveEating 3s infinite;
+    animation-timing-function: linear;
+  }
+
+  .food{
+    width: 10px;
+    height: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: rgb(163, 96, 14);
+    margin-left: 10px;
+    border-radius: 50%;
+    animation: moveEating 3s infinite;
+    animation-timing-function: linear;
+
+  }
