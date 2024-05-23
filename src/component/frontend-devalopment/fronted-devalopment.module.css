@@ -1,0 +1,87 @@
+.maincontainer{
+    /* background-color: brown; */
+    margin-top: 50px;
+    padding: 90px;
+    display: flex;
+}
+
+.text__container{
+    /* background-color: aqua; */
+    width: 60%;
+    /* height: 600px; */
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar__container{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-right: 100px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* border: 2px solid #ccc; */
+}
+
+.image{
+    position: relative;
+    /* width: 300px; */
+    height: 300px;
+    display: flex;
+    border-bottom: 2px solid blue;
+    /* background-color: antiquewhite; */
+}
+
+.triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right:170px solid transparent;
+    border-bottom: 300px solid blue;
+    border-left: 170px solid transparent;
+    }
+
+    .triangle__container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        width: 80%;
+        margin-left: 10%;
+        height: 50px;
+        padding: 2px;
+        /* background-color: rgb(255, 0, 242); */
+    }
+
+    .triangle__border__bottom{
+        /* position: absolute; */
+        width: 0;
+        height: 0;
+        border-right:10px solid transparent;
+        border-bottom: 20px solid blue;
+        border-left: 10px solid transparent;   
+        margin-top: 5px;
+        margin-right: 3px;
+    }
+
+    .triangle__border__top{
+        width: 0;
+        height: 0;
+        border-top: 20px solid rgb(3, 113, 75);
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent; 
+        margin-right: 3px;
+    }
+
+    .triangle__container__top,
+    .triangle__container__bottom{
+        display: flex;
+        /* border: 2px solid black; */
+    }
+
+    .triangle__container__bottom{
+        position: absolute;
+        left: -27px;
+    }

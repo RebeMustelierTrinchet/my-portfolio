@@ -7,7 +7,7 @@
     text-align: center;
     flex-direction: row;
     position: fixed;
-    bottom: 150px;
+    bottom: 50px;
     right: 85px;
     overflow: hidden;
 }
@@ -68,8 +68,8 @@
   
 
   .windows{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 10px;

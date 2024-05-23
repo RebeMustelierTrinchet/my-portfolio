@@ -1,13 +1,47 @@
+@import url('./../..//const/colors.css');
+
+.body__conteiner{
+    height: 100vh;
+    overflow: hidden;
+    opacity: 0;
+
+    animation: apear 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 13s;
+}
+
+@keyframes  apear {
+    0%{
+        opacity: 0;
+        
+    }
+    
+    100% {
+        opacity: 1;
+        height: auto;
+    }
+  }
+
+
 .body{
-    padding: 40px;
-    background-color: rgb(0, 255, 166);
+    padding: 0 ;
+    /* background-color: rgb(0, 255, 166); */
     width: 100%;
     min-height: 500px;
 
     
 }
+
+.animation__starting__conteiner{
+    position: relative;
+    /* z-index: 1000; */
+
+}
 .main__container{
     position: relative;
+    margin-top: 0 !important;
+    /* background-color: aqua; */
+
 }
 
 /* .rotate__body__reverse{
@@ -20,11 +54,28 @@
 .header__conteiner{
     z-index: 100;
     position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 80px;
+    /* background-color: rgb(36, 164, 164); */
+}
+
+.logo__conteiner,
+.logo{
+    width: 200px;
+    height: auto;
+    position: relative;
+    display: flex;
+    /* background-color: aqua; */
 }
 .maincontainer{
-    background-color: rgb(255, 136, 0);
+    /* background-color: rgb(255, 136, 0); */
+    /* background-color: var(--blue); */
     width: 100%;
     min-height: 500px;
+    margin-top: 0;
     overflow: hidden;
 }
 .rotate__body{
@@ -37,7 +88,8 @@
 
 @keyframes rotate {
     0% {transform:  rotateY(0deg);}
-    100% {transform: perspective(10px) rotateX(1deg)}
+    1%{height: 100vh; overflow: hidden;}
+    100% {transform: perspective(10px) rotateX(1deg); height: 100vh; overflow: hidden;}
 }
 
 .rotate__body__reverse {
@@ -46,8 +98,9 @@
 }
 
 @keyframes rotate-reverse {
-    0% { transform: perspective(10px) rotateX(1deg); }
-    100% { transform: rotateY(0deg); }
+    0% { transform: perspective(10px) rotateX(1deg); height: 100vh; overflow: hidden;}
+    99%{height: 100vh; overflow: hidden;}
+    100% { transform: rotateY(0deg); min-height: 500px; }
 }
 
 
@@ -90,8 +143,9 @@
     display: flex;
     align-items: center !important;
     justify-content: center;
-    background: linear-gradient(aqua, rgb(0, 255, 166) );
-    border: 5px dotted rgb(255, 136, 0);
+    background: linear-gradient(var(--pink), var(--blue));
+    border: none;
+    margin-left: auto;
     overflow: hidden;
 }
 .btn:hover .btn__icon{

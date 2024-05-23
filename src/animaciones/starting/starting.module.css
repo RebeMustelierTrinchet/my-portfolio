@@ -1,0 +1,183 @@
+
+
+.maincontainer{
+    display: flex;
+    position: absolute;
+    margin-bottom: auto;
+    margin-right: auto;
+    
+    width: 100%;
+    height: 100vh;
+    animation: reduce 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 12s;
+}
+
+@keyframes  reduce{
+    0%{
+        opacity: 1;
+        
+    }
+    
+    100% {
+        opacity: 0;
+    }
+  }
+
+
+.logocontainer{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: rgb(50, 50, 50);
+    z-index: 10;
+    position: relative;
+    /* display: flex; */
+    overflow: hidden;
+}
+
+
+.imagen__conteiner{
+    /* background-color: white; */
+    /* z-index: 100 !important; */
+    display: flex;
+    position: relative;
+    
+}
+
+.imagen__bear{
+    display: flex;
+    position: absolute;
+    top:121px;
+    left:24%;
+    /* opacity: ; */
+    width: 22%;
+    overflow: hidden;
+    animation: dissapear 0.1s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    /* z-index: 10; */
+    /* height: 320px; */
+}
+
+@keyframes  dissapear {
+    0%{
+        width: 22%;
+        
+    }
+    
+    100% {
+        width: 0;
+    }
+  }
+
+.imagen__color__conteiner{
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    width: 0;
+    overflow: hidden;
+    top:125px;
+    left:24.2%;
+    z-index: 1;
+    animation: width 5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes  width {
+    0%{
+        width: 0;
+        
+    }
+    70% {
+        width: 22%;
+        transform: translateX(0)
+    }
+    100% {
+        width: 22%;
+        transform: translateX(-35%);
+    }
+  }
+
+
+.imagen__color{
+    width: 340px;
+}
+
+.imagen__logo__conteiner{
+    position: absolute;
+    /* background-color: aqua; */
+    animation: move 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+    top:120px;
+    left:38%;
+    width: 0;
+    overflow: hidden;
+    /* width: 60% !important; */
+    /* padding-left: 40px; */
+}
+
+@keyframes  move {
+    0%{
+        width: 0;
+        
+    }
+    
+    100% {
+        width: 60%;
+    }
+  }
+
+  .imagen__logo{
+    /* position: absolute; */
+    width: 900px;
+  }
+
+  
+
+
+  .logo_border{
+    display: flex;
+    position: absolute;
+    top:146px;
+    left:24.1%;
+    /* opacity: ; */
+    width:  800px;
+    overflow: hidden;
+    animation: dissapear 0.1s;
+    animation-fill-mode: forwards;
+    animation-delay: 11s;
+    /* z-index: 10; */
+    /* height: 320px; */
+}
+
+.imagen__color__logo{
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    width: 0;
+    overflow: hidden;
+    top:125px;
+    left:24.2%;
+    z-index: 1;
+    animation: width_logo 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes  width_logo {
+    0%{
+        width: 0;
+        
+    }
+    100% {
+        width: 800px;
+    }
+  }
+  .logo_original{
+    width: 800px;
+    z-index: 10;
+  }
+
+
+  .logocontainer{
+
+  }

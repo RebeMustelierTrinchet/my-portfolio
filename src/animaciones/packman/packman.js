@@ -15,7 +15,8 @@ export default  function AnimationPackman() {
         <div className={styles.Packman_conteiner}>  
             <img src={Packman2} className={styles.Packman2}/>
             <div className={styles.packman2_conteiner}>         
-            <img src={Packman1} className={styles.Packman1}/></div>  
+            <img src={Packman1} className={styles.Packman1}/>
+            </div>  
         </div>
         <div className={styles.food_conteiner}> 
             <img src={food} className={styles.food}/> 
