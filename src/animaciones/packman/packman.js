@@ -10,6 +10,18 @@ import food from './../../imagenes/animaciones/packman/Untitled.png'
 
 export default  function AnimationPackman() {
 
+  const containers = [];
+
+  for (let i = 0; i < 7; i++) {
+    containers.push(
+      <div key={i} className={styles.sub_food_container}>
+        <img src={food} className={styles.food} alt="Food" />
+        <img src={food} className={styles.food} alt="Food" />
+        <img src={windows} className={styles.berry} alt="Windows" />
+      </div>
+    );
+  }
+
   return (
       <div className={styles.maincontainer}>  
         <div className={styles.Packman_conteiner}>  
@@ -18,19 +30,7 @@ export default  function AnimationPackman() {
             <img src={Packman1} className={styles.Packman1}/>
             </div>  
         </div>
-        <div className={styles.food_conteiner}> 
-            <img src={food} className={styles.food}/> 
-            <img src={food} className={styles.food}/> 
-            <img src={windows} className={styles.windows}/>
-            <img src={food} className={styles.food}/> 
-            <img src={food} className={styles.food}/> 
-            <img src={windows} className={styles.windows}/>
-            <img src={food} className={styles.food}/> 
-            <img src={food} className={styles.food}/> 
-            <img src={windows} className={styles.windows}/>
-            
-            
-        </div>
+        <div className={styles.food_container}> {containers}</div>
     </div>
   );
 }

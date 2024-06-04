@@ -1,25 +1,68 @@
-.maincontainer{
-    width: 80%;
-    min-width: 750px;
-    padding: 20px;
-    background-color: rgba(222, 200, 255, 0.303);
-    background-repeat: repeat;
-    background-size: contain;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    
 
+.maincontainer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #333;
 }
 
-.list__container{
-    font-size: 20px;
-    list-style: none;
-    font-family: Copperplate;
-    /* color: ; */
-    
+.list__container {
+  list-style-type: none;
+  padding: 5px;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
-.list__item{
-    margin-left: 10px;
+/* seleccionar el último elemento li que tiene la clase .list__item dentro de su contenedo */
+.list__container > li {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--pink) ;
+  color: var(--blue);
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.list__item {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+ 
+}
+
+.list__item:last-child {
+  border-bottom: none;
+}
+
+.sub__list__container {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sub__list__container > li {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f0f8ff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* se utiliza para seleccionar el último elemento li que tiene la clase .list__item dentro de su contenedor.  */
+.sub__list__container > li:last-child {
+  border-bottom: none;
+}
+
+/* selecciona todos los elementos li impares que son hijos directos del contenedor con la clase  */
+.sub__list__container > li:nth-child(odd) {
+  background-color: #e9f5ff;
 }

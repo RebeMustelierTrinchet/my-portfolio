@@ -23,25 +23,32 @@ import triangle from './../../imagenes/gift/triangulo.gif'
 export default  function Rebeca() {
 
   return (
-      <div className={styles.maincontainer}>  
+    <div className={styles.maincontainer}>  
 
-        <img
-          src={triangle}
-          alt="GIF"
-          className={styles.video__container}
-         />
-      
-      {/* <ParticlesBg/> */}
-      <div className={styles.text__container}>
-        <h2 className={styles.text}>Revolutionizing</h2>
-        <h2 className={styles.text}>Every</h2>
-        <h2 className={styles.text}>Byte,</h2>
-        <h2 className={styles.text}>Engineering</h2>
-        <h2 className={styles.text}>Creative</h2>
-        <h2 className={styles.text}>Algorithms</h2>
+    <div className={styles.background}></div>
 
-      {/* <R__Animation/> */}
-      </div>
+    <h1 className={styles.title}>
+        <span>R</span><span>e</span><span>b</span><span>e</span><span>c</span><span>a</span><span>:</span>
+        <span className={styles.separate}> </span>
+        <span>I</span><span>n</span><span>n</span><span>o</span><span>v</span><span>a</span><span>t</span><span>i</span><span>v</span><span>e</span>
+        <span  className={styles.separate}> </span>
+        <span>F</span><span>r</span><span>o</span><span>n</span><span>t</span><span>e</span><span>n</span><span>d</span>
+        <span  className={styles.separate}> </span>
+        <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
+    </h1>
+    <h2 className={styles.subtitle}>
+        <span>T</span><span>r</span><span>a</span><span>n</span><span>s</span><span>f</span><span>o</span><span>r</span><span>m</span><span>i</span><span>n</span><span>g</span>
+        <span  className={styles.separate}> </span>
+        <span>i</span><span>d</span><span>e</span><span>a</span><span>s</span>
+        <span  className={styles.separate}> </span>
+        <span>i</span><span>n</span><span>t</span><span>o</span>
+        <span  className={styles.separate}> </span>
+        <span>e</span><span>x</span><span>c</span><span>e</span><span>p</span><span>t</span><span>i</span><span>o</span><span>n</span><span>a</span><span>l</span>
+        <span  className={styles.separate}> </span>
+        <span>d</span><span>i</span><span>g</span><span>i</span><span>t</span><span>a</span><span>l</span>
+        <span  className={styles.separate}> </span>
+        <span>e</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span><span>s</span>
+    </h2>
     </div>
     
   );

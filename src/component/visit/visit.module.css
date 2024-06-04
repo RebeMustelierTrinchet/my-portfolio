@@ -1,0 +1,62 @@
+.maincontainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+    border: 7px dotted var(--pink);
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.text__container{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin-left: 40px;
+}
+
+.title {
+    font-family: Bodoni MT ;
+    font-size: 46px;
+    font-weight: bold;
+    color: var(--blue);
+    text-align: center;
+  }
+  
+  .text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #555;
+  }
+
+   
+  .btn {
+    margin-top: 15px;
+    background-color: var(--blue) !important;
+    border: none !important;
+    color: #fff !important;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: 0.75s;
+    font-size: 18px;
+    width: 110px;
+    height: 40px;
+    transition: 1s;
+
+  }
+  
+  .btn:hover {
+    background-color: transparent !important;
+    border: 3px solid var(--blue) !important;
+    color: var(--blue) !important;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  

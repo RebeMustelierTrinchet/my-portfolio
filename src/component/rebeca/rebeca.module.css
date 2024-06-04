@@ -5,10 +5,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  position: relative;
+    position: relative;
     padding: 0;
-    margin: 0!important;
-    /* background-color: #e7d6fc; */
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,51 +16,40 @@
     font-family: "Saira Stencil One", cursive!important;
     width: 100%;
     overflow: hidden;
-    margin-bottom: 100px !important;
+    margin-bottom: 10px;
+
+    color: var(--pink);
+
+    background-color: rgba(3, 71, 106, 0.475);
 }
 
-.video__container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 690px;
-    object-fit: cover;
-  }
 
-  .text__container{
-    height: 800px;
-    width: 100%;
+.background{
+  position: absolute;
+  
+  background-image: url('./../../imagenes/_e34833ab-001e-479e-b77a-5027bb0fc799.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
+  width: 100%;
+  height: 800px;
+  z-index: -1;
+}
 
-  }
-
-  .text {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content:flex-start;
-    width: 100%;
-    min-width: 800px;
-    height: 115px;
-    margin: 0;
-    padding-left: 20%;
-    font-weight: 400!important;
-    font-size: 70px!important;
-    text-transform: uppercase;
-    background-color: rgb(120, 120, 120) !important;
-    mix-blend-mode: screen;
-    /* margin-top: 30px; */
-    color:rgba(250, 155, 250, 0.925);
-    /* color: var(--blue); */
-    opacity: 1;
-    /* -webkit-text-stroke: 2px black; */
-  }
-
-  .text:hover{
-    color: rgb(230, 161, 161);
-    opacity: 1 !important;
-    text-shadow: 3px 3px red;
-  }
+.separate{
+  margin: 0 4px !important;
+}
+.title span, 
+.subtitle span {
+  display: inline-block;
+  margin: 0 0.3px;
+  transition: transform 0.2s;
+}
+.subtitle span {
+  font-size: 1.5em;
+}
+.title span:hover, .subtitle span:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}

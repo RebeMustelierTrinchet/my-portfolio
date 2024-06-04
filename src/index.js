@@ -10,6 +10,7 @@ import  RebecaComponent from './pages/Rebeca/rebeca';
 import Layout from './pages/layout/layout';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Portfolio from './pages/portfolio/portfolio';
+import Contact_Component from './pages/contact/contact';
 
 
 const rootElement = document.getElementById("root");
@@ -18,8 +19,9 @@ render(
     <Layout>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        {/* <Route exact path="/" element={<RebecaComponent/>} /> */}
+        <Route exact path="/about_me" element={<RebecaComponent/>} />
         <Route exact path="/portfolio" element={<Portfolio/>} />
+        <Route exact path="/contact_us" element={<Contact_Component/>} />
       </Routes>
     </Layout>
   </Router>,

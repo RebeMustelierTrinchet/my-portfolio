@@ -8,11 +8,12 @@ export  const Projects = [
     project_name:"Helem Salom",
     project_url:"https://helem-salom.live/",
     code_url:"in process",
-    project__descripsion: "This project is a web application developed for Helem Salom, a modern hair salon aiming to offer its clients an advanced digital experience. The website allows users to book appointments, explore the available services, get to know the stylist, and receive updated information about promotions and events."
+    project__descripsion: "This project is a web application developed for Helem Salom, a modern hair salon aiming to offer its clients an advanced digital experience. The website allows users to book appointments, explore the available services, consume a set of APIs from an Express.js server, and also includes a messaging service.",
+    
 },
 {
     project_image:I2,
-    project_name:"Construction Project",
+    project_name:"Damarco Project",
     project_url:"https://www.damar-co.com/",
     code_url:"in process",
     project__descripsion:"This project is a web application developed for Damarco, a company specializing in the construction and renovation of spaces. The website allows users to explore the services offered in the construction and renovation of bathrooms, kitchens, and various spaces, learn more about the company, and contact them to request quotes and personalized advice."

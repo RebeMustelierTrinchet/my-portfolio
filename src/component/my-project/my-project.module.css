@@ -4,9 +4,10 @@
     /* flex-wrap: wrap; */
     width: 100%;
     padding: 40px;
-    background-image: url('./../../imagenes/OIP.jpg');
+    /* background-image: url('./../../imagenes/OIP.jpg');
     background-repeat: repeat;
-    background-size: contain;
+    background-size: contain; */
+    background-color: var(--pink);
     position: relative;
 }
 

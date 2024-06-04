@@ -16,10 +16,7 @@ function Home() {
   return (
       <div className={styles.maincontainer}>   
 
-       <Header/>
-        <Resume/>
-        
-      <Frontend__Development/>
+      <Rebeca/>
         
       
     

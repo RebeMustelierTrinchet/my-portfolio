@@ -32,6 +32,7 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    background-color: rgba(254, 252, 252, 0.581);
     justify-content:center;
     width: 100%;
     border: 2px solid var(--green);
@@ -134,15 +135,21 @@
     transition: 1s;
     opacity: 0.8;
 }
-.text{
-    color:black;
-    font-family: Copperplate;
-    /* margin-bottom: 40px; */
-    font-size: large;
-    text-align: start;
-    margin-top: 10px;
-    
-}
+.title {
+    font-family: Bodoni MT ;
+    font-size: 46px;
+    font-weight: bold;
+    color: var(--blue);
+    text-align: center;
+  }
+  
+  .text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #555;
+  }
 
 
 @media all and (max-width: 700px){
@@ -167,7 +174,5 @@
     .right__container{
         min-width: 95% !important;
     }
-    .name__conteiner{
-        /* display: none; */
-    }
+   
 }

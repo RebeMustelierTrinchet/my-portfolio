@@ -85,3 +85,20 @@
         position: absolute;
         left: -27px;
     }
+
+
+    .title {
+        font-family: Bodoni MT ;
+        font-size: 46px;
+        font-weight: bold;
+        color: var(--blue);
+        text-align: center;
+      }
+      
+      .text {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: #555;
+      }

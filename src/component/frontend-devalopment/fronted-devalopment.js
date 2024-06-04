@@ -38,7 +38,7 @@ export default  function Frontend__Development() {
 
         </div>
           <div className={styles.text__container}>
-            <h1>What do I do as a frontend developer?</h1>
+            <h1  className={styles.title}>What do I do as a frontend developer?</h1>
             <p  className={styles.text}>As a frontend developer, I specialize in creating the visual and functional part of web 
                 applications. I use HTML, CSS, and JavaScript to build the user interface, ensuring it is attractive, easy to use, 
                 and accessible to all users. My main focus is to turn designs into functional code and add basic interactivity, such 

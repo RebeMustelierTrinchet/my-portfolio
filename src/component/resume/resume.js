@@ -25,7 +25,7 @@ export default  function Resume() {
             <Interactive__Background />
           </div> 
           <div className={styles.text__container}>
-          <h1>Who am I ?</h1>
+          <h1 className={styles.title}>Who am I ?</h1>
           <p  className={styles.text}>Hello! I'm Rebeca, an enthusiastic programming student with a passion
              for art and reading. I'm exploring the vast world of software development 
              as I dive into the exciting field of programming. My curiosity and love 

@@ -1,11 +1,11 @@
-
+/* 
 
 .maincontainer{
     display: flex;
     position: absolute;
     margin-bottom: auto;
     margin-right: auto;
-    
+    background-color: rgb(50, 50, 50);
     width: 100%;
     height: 100vh;
     animation: reduce 3s;
@@ -26,49 +26,21 @@
 
 
 .logocontainer{
-    width: 100%;
-    /* height: 100vh; */
-    background-color: rgb(50, 50, 50);
+    width:  800px;
     z-index: 10;
     position: relative;
-    /* display: flex; */
+    display: flex;
     overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
 .imagen__conteiner{
-    /* background-color: white; */
-    /* z-index: 100 !important; */
     display: flex;
     position: relative;
     
 }
-
-.imagen__bear{
-    display: flex;
-    position: absolute;
-    top:121px;
-    left:24%;
-    /* opacity: ; */
-    width: 22%;
-    overflow: hidden;
-    animation: dissapear 0.1s;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
-    /* z-index: 10; */
-    /* height: 320px; */
-}
-
-@keyframes  dissapear {
-    0%{
-        width: 22%;
-        
-    }
-    
-    100% {
-        width: 0;
-    }
-  }
 
 .imagen__color__conteiner{
     position: absolute;
@@ -76,7 +48,7 @@
     width: 0;
     overflow: hidden;
     top:125px;
-    left:24.2%;
+    left:0;
     z-index: 1;
     animation: width 5s;
     animation-fill-mode: forwards;
@@ -105,16 +77,13 @@
 
 .imagen__logo__conteiner{
     position: absolute;
-    /* background-color: aqua; */
     animation: move 4s;
     animation-fill-mode: forwards;
     animation-delay: 6s;
     top:120px;
-    left:38%;
+    left:0;
     width: 0;
     overflow: hidden;
-    /* width: 60% !important; */
-    /* padding-left: 40px; */
 }
 
 @keyframes  move {
@@ -129,7 +98,6 @@
   }
 
   .imagen__logo{
-    /* position: absolute; */
     width: 900px;
   }
 
@@ -140,15 +108,12 @@
     display: flex;
     position: absolute;
     top:146px;
-    left:24.1%;
-    /* opacity: ; */
+    left:0;
     width:  800px;
     overflow: hidden;
     animation: dissapear 0.1s;
     animation-fill-mode: forwards;
     animation-delay: 11s;
-    /* z-index: 10; */
-    /* height: 320px; */
 }
 
 .imagen__color__logo{
@@ -157,7 +122,7 @@
     width: 0;
     overflow: hidden;
     top:125px;
-    left:24.2%;
+    left:0;
     z-index: 1;
     animation: width_logo 10s;
     animation-fill-mode: forwards;
@@ -178,6 +143,98 @@
   }
 
 
-  .logocontainer{
+  
+  @media all and (max-width: 800px){
+    
+  } */
 
+  
+
+.maincontainer{
+    display: flex;
+    position: absolute;
+    margin-bottom: auto;
+    margin-right: auto;
+    /* background-color: rgb(50, 50, 50); */
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    animation: reduce 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 12s;
+}
+
+@keyframes  reduce{
+    0%{
+        opacity: 1;
+        
+    }
+    
+    100% {
+        opacity: 0;
+    }
+  }
+
+
+.logocontainer{
+    width:  80%;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: aqua; */
+}
+
+
+
+
+  .logo_border{
+    display: flex;
+    position: absolute;
+    top:146px;
+    left:0;
+    width:  100%;
+    overflow: hidden;
+    animation: dissapear 0.1s;
+    animation-fill-mode: forwards;
+    animation-delay: 11s;
+    z-index: 100;
+
+}
+
+.imagen__color__logo{
+    position: absolute;
+    background-color: rgb(50, 50, 50);
+    width: 100%;
+    height: 100%;
+    top:125px;
+
+    right: 0;
+    z-index: 10;
+    animation: width_logo 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes  width_logo {
+    0%{
+        width: 100%;
+        
+    }
+    100% {
+        width: 0;
+    }
+  }
+  .logo_original{
+    width: 100.1%;
+    top:144px;
+    position: absolute;
+    /* z-index: 10; */
+  }
+
+
+  
+  @media all and (max-width: 800px){
+    
   }
