@@ -6,6 +6,8 @@ import { CgMail } from "react-icons/cg";
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+import { FaLinkedinIn } from "react-icons/fa6";
+
 import { FaGithub } from "react-icons/fa6";
 
 
@@ -53,9 +55,9 @@ export default function NavBar(){
           </Link>
 
           <div className={styles.btn__social__media__container}>
-            <button className={styles.btn__social__media} href="https://www.facebook.com/profile.php?id=100082191186102"><FaFacebookF className={styles.icon}/></button>
-            <button className={styles.btn__social__media} href="https://www.instagram.com/hellentrinchet/"><FaInstagram className={styles.icon}/></button>
-            <button className={styles.btn__social__media} href="/"><FaGithub className={styles.icon} /></button>
+            <button className={styles.btn__social__media} href="/"><FaLinkedinIn className={styles.icon}/></button>
+            <button className={styles.btn__social__media} href="https://www.instagram.com/codingbecky/"><FaInstagram className={styles.icon}/></button>
+            <button className={styles.btn__social__media} href="https://github.com/RebeMustelierTrinchet"><FaGithub className={styles.icon} /></button>
             <button className={styles.btn__social__media} href="/emails"><CgMail className={styles.icon} /></button>
           </div>
 

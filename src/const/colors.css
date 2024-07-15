@@ -1,5 +1,5 @@
 :root{
-    --pink: #FFDDE2FF;
-    --blue: #8BBEE8FF;
+    --pink: rgb(242, 202, 250);
+    --blue: rgb(123, 196, 255);
     --green: #008C76FF;
 }

@@ -5,7 +5,7 @@ import { Button } from 'react-bootstrap';
 import { FaPhoneVolume } from "react-icons/fa6";
 import styles from './footer.module.css';
 import { FaGithub } from "react-icons/fa6";
-
+import { FaLinkedinIn } from "react-icons/fa6";
 import logo from './../../imagenes/logo/logo-original.png'
 
 export default function Footer() {
@@ -13,6 +13,31 @@ export default function Footer() {
         <footer className={styles.footer}>
             <div className={styles.footer__container}>
                 <div className={styles.social__media}>
+                    <h4>Follow Us</h4>
+                    <div className={styles.icon__container}>
+                        <button href="/" aria-label="Facebook">
+                            <FaLinkedinIn className={styles.icon} />
+                        </button >
+                        <button  href="https://www.instagram.com/codingbecky/" aria-label="Instagram">
+                            <FaInstagram className={styles.icon} />
+                        </button >
+                        <button  href="/" aria-label="Github">
+                            <FaGithub className={styles.icon} />
+                        </button >
+                        <button  href="mailto:mustelierrebeca99@gmail.com" aria-label="Email">
+                            <CgMail className={styles.icon} />
+                        </button >
+                    </div>
+                    <div className={styles.logo__conteiner}>
+                        <img src={logo} alt={logo} className={styles.logo}/>
+                    </div>
+                </div>
+
+                <div className={styles.social__media_movil}>
+
+                    <div className={styles.logo__conteiner}>
+                        <img src={logo} alt={logo} className={styles.logo}/>
+                    </div>
                     <h4>Follow Us</h4>
                     <div className={styles.icon__container}>
                         <button href="https://www.facebook.com" aria-label="Facebook">
@@ -28,9 +53,7 @@ export default function Footer() {
                             <CgMail className={styles.icon} />
                         </button >
                     </div>
-                    <div className={styles.logo__conteiner}>
-                        <img src={logo} alt={logo} className={styles.logo}/>
-                    </div>
+                  
                 </div>
 
                 <div className={styles.navigation}>

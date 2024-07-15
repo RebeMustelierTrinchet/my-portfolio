@@ -74,7 +74,7 @@
   
   .nav__button {
     background-color: #282828 !important;
-    border: none;
+    /* border: none; */
     color: var(--green) !important;
     cursor: pointer;
     border: 2px solid var(--green) !important;
@@ -95,21 +95,13 @@
   }
   
   .contact__button {
-    margin-top: 15px;
-    background-color: var(--green) !important;
+
+    background-color:  var(--green) !important;
     border: none !important;
-    color: #fff !important;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    color:  #fff !important;
     cursor: pointer;
     transition: 0.75s;
-    font-size: 16px;
-    width: 110px;
-    height: 40px;
+    margin-bottom: 10px;
 
   }
   
@@ -134,5 +126,45 @@
     position: relative;
     display: flex;
     margin-top: 20px;
+
+}
+
+
+.social__media_movil{
+  display: none;
+}
+@media all and (max-width: 750px) {
+  .footer__container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer__container > div {
+      flex: 1 1 100%;
+      margin: 10px 0;
+  }
+
+  .icon__container {
+      justify-content: center;
+  }
+
+  .logo__conteiner,
+  .logo {
+      width: 300px;
+      margin-top: 0;
+      margin-bottom: 10px;
+  }
+
+  .social__media_movil{
+    background-color: #2828288c;
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .social__media{
+    display: none;
+  }
+
 
 }

@@ -1,57 +1,52 @@
-import React, { useState } from "react";
-import styles from "./rebeca.module.css"
+import React from "react";
+import styles from "./rebeca.module.css";
 import R__Animation from "../../animaciones/R-animation/R-animation";
 import ParticlesBg from "../particlesBg/particlesBg";
-import image from './../../imagenes/gift/programadora.gif'
-import tenor from './../../imagenes/gift/tenor.gif'
-import rosita from './../../imagenes/gift/rosita.gif'
-import Oip from './../../imagenes/gift/OIP.jpg'
-import cubo from './../../imagenes/gift/cubo.gif'
-import tenors from './../../imagenes/gift/tenors (1).gif'
-import gato from './../../imagenes/gift/gato.gif'
-import pinguino from './../../imagenes/gift/pinguino.webp'
-import cat from './../../imagenes/gift/cat.gif'
-import triangle from './../../imagenes/gift/triangulo.gif'
 
+const titleMap = {
+  bloque1: ["R", "e", "b", "e", "c", "a", ":"],
+  bloque2: ["I", "n", "n", "o", "v", "a", "t", "i", "v", "e"],
+  bloque3: ["F", "r", "o", "n", "t", "e", "n", "d"],
+  bloque4: ["D", "e", "v", "e", "l", "o", "p", "e", "r"],
+};
 
+const subtitleMap = {
+  subtitle1: ["T", "r", "a", "n", "s", "f", "o", "r", "m", "i", "n", "g"],
+  subtitle2: ["i", "d", "e", "a", "s"],
+  subtitle3: ["i", "n", "t", "o"],
+  subtitle4: ["e", "x", "c", "e", "p", "t", "i", "o", "n", "a", "l"],
+  subtitle5: ["d", "i", "g", "i", "t", "a", "l"],
+  subtitle6: ["e", "x", "p", "e", "r", "i", "e", "n", "c", "e", "s"],
+};
 
-
-
-
-
-
-export default  function Rebeca() {
-
+export default function Rebeca() {
   return (
-    <div className={styles.maincontainer}>  
-
-    <div className={styles.background}></div>
-
-    <h1 className={styles.title}>
-        <span>R</span><span>e</span><span>b</span><span>e</span><span>c</span><span>a</span><span>:</span>
-        <span className={styles.separate}> </span>
-        <span>I</span><span>n</span><span>n</span><span>o</span><span>v</span><span>a</span><span>t</span><span>i</span><span>v</span><span>e</span>
-        <span  className={styles.separate}> </span>
-        <span>F</span><span>r</span><span>o</span><span>n</span><span>t</span><span>e</span><span>n</span><span>d</span>
-        <span  className={styles.separate}> </span>
-        <span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
-    </h1>
-    <h2 className={styles.subtitle}>
-        <span>T</span><span>r</span><span>a</span><span>n</span><span>s</span><span>f</span><span>o</span><span>r</span><span>m</span><span>i</span><span>n</span><span>g</span>
-        <span  className={styles.separate}> </span>
-        <span>i</span><span>d</span><span>e</span><span>a</span><span>s</span>
-        <span  className={styles.separate}> </span>
-        <span>i</span><span>n</span><span>t</span><span>o</span>
-        <span  className={styles.separate}> </span>
-        <span>e</span><span>x</span><span>c</span><span>e</span><span>p</span><span>t</span><span>i</span><span>o</span><span>n</span><span>a</span><span>l</span>
-        <span  className={styles.separate}> </span>
-        <span>d</span><span>i</span><span>g</span><span>i</span><span>t</span><span>a</span><span>l</span>
-        <span  className={styles.separate}> </span>
-        <span>e</span><span>x</span><span>p</span><span>e</span><span>r</span><span>i</span><span>e</span><span>n</span><span>c</span><span>e</span><span>s</span>
-    </h2>
+    <div className={styles.maincontainer}>
+      <div className={styles.background}></div>
+      <div className={styles.title}>
+        {Object.keys(titleMap).map((bloque, index) => (
+          <div key={index} className={styles.block}>
+            {titleMap[bloque].map((letter, i) => (
+              <span key={i}>{letter}</span>
+            ))}
+            {index !== Object.keys(titleMap).length - 1 && (
+              <span className={styles.separate}> </span>
+            )}
+          </div>
+        ))}
+      </div>
+      <div className={styles.subtitle}>
+        {Object.keys(subtitleMap).map((subtitle, index) => (
+          <div key={index} className={styles.block}>
+            {subtitleMap[subtitle].map((letter, i) => (
+              <span key={i}>{letter}</span>
+            ))}
+            {index !== Object.keys(subtitleMap).length - 1 && (
+              <span className={styles.separate}> </span>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
-    
   );
 }
-
- 

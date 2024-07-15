@@ -59,4 +59,8 @@
     font-size: 20px;
     cursor: pointer;
   }
-  
+  @media all and (max-width: 750px){
+    .imagen{
+      width: 100%;
+    }
+  }

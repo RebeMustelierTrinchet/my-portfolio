@@ -107,3 +107,33 @@
     animation-timing-function: linear;
 
   }
+
+  @media all and (max-width: 750px){
+    .Packman1,
+    .Packman2{
+        height: 80px;
+        width: 80px;
+    } 
+
+    .berry{
+        height: 40px;
+        width: 40px;
+    }
+    .Packman_conteiner{
+        margin-top: auto;
+        margin-bottom: auto;
+        /* background-color: aqua; */
+        height: auto;
+    }
+
+    .food{
+        height: 40px;
+        width: 40px;
+    }
+
+    .food_container{
+        /* background-color: aqua; */
+        left: 30px;
+    }
+    
+  }

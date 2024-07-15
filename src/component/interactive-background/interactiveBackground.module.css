@@ -121,4 +121,10 @@
     .maincontainer{
       height: 100%;
     }
+
+    .image{
+      margin-right: auto;
+      width: 300px;
+      height: auto;
+    }
   }

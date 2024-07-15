@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 0;
+    padding: 5px;
     
     display: flex;
     flex-direction: column;
@@ -45,11 +45,20 @@
   display: inline-block;
   margin: 0 0.3px;
   transition: transform 0.2s;
+  font-size: 58px;
+  
 }
 .subtitle span {
-  font-size: 1.5em;
+  font-size: 40px;
 }
 .title span:hover, .subtitle span:hover {
   transform: translateY(-10px);
   cursor: pointer;
+}
+
+.title,
+.subtitle {
+  display: flex ;
+  flex-direction: row ;
+  flex-wrap: wrap;
 }

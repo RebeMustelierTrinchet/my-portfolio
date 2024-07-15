@@ -1,5 +1,5 @@
 .main__conteiner{
-    background-color: pink;
+    background-color: var(--pink);
     width: 40%;
     min-width: 400px;
     height: 0;
@@ -57,7 +57,7 @@
     /* background-color: aqua; */
     height: 50px;
 
-    bottom:25px;
+    bottom:26px;
     transition: 2s;
 
 }
@@ -195,5 +195,14 @@
     font-size: 18px;
   }
 
+  @media all and (max-width: 750px){
+    .main__conteiner{
+        min-width: 95%;
+        margin-left: 2.5%;
+        margin-top: 70px;
+    }
 
-
+    .text2{
+        bottom: 29px;
+    }
+  }

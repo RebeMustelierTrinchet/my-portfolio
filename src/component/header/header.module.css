@@ -107,4 +107,9 @@
     color: var(--pink);
   }
 
-  
+  @media all and (max-width: 750px){
+    .main__container{
+      min-width:100%;
+      
+  }
+  }
