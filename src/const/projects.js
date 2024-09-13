@@ -2,6 +2,7 @@ import I1 from './../imagenes/projects/Screenshot 2024-04-22 121339.png'
 import I2 from './../imagenes/projects/Screenshot 2024-04-24 090550.png'
 import I3 from './../imagenes/projects/Screenshot 2024-04-24 090757.jpeg'
 import I4 from './../imagenes/projects/Screenshot 2024-06-12 211500.png'
+import I5 from './../imagenes/projects/liurka.png'
 
 export  const Projects = [
 {
@@ -33,4 +34,12 @@ export  const Projects = [
     code_url:"in process",
     project__descripsion:"The Helem Salon administration interface is designed to streamline and enhance the management of salon operations. It provides functionalities for drafting comments, receiving messages, and scheduling appointments. This user-friendly platform ensures that all client interactions and appointments are efficiently handled, contributing to an organized and smooth-running salon. Note: This administration interface is available in Spanish to cater to our Hispanic clientele."
 },
+{
+    project_image:I5,
+    project_name:"Liurka Infinity - Frontend Website",
+    project_url:"/",
+    code_url:"in process",
+    project__descripsion:"Liurka Infinity is a frontend website designed with a focus on elegance and interactivity. This project features dynamic carousels and sophisticated visual touches, providing a smooth and engaging user experience. The design is crafted to capture visitors' attention and guide them through an intuitive interface. Additionally, we have integrated a contact form that sends messages directly to email, ensuring quick and efficient communication. The entire site is available in Spanish, allowing for a direct connection with our Hispanic audience."
+},
+
 ]
