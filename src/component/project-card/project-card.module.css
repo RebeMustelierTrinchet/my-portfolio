@@ -47,7 +47,7 @@
 .url__container{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     align-items: start;
     margin-top: 10px;
 

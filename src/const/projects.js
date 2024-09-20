@@ -9,7 +9,7 @@ export  const Projects = [
     project_image:I1,
     project_name:"Helem Salom",
     project_url:"https://helem-salom.live/",
-    code_url:"in process",
+    code_url:"https://github.com/RebeMustelierTrinchet/helem-booking-salon-frontend/",
     project__descripsion: "This project is a web application developed for Helem Salom, a modern hair salon aiming to offer its clients an advanced digital experience. The website allows users to book appointments, explore the available services, consume a set of APIs from an Express.js server, and also includes a messaging service.",
     
 },
@@ -17,14 +17,14 @@ export  const Projects = [
     project_image:I2,
     project_name:"Damarco Project",
     project_url:"https://www.damar-co.com/",
-    code_url:"in process",
+    code_url:"https://github.com/RebeMustelierTrinchet/construction-project/tree/main/src",
     project__descripsion:"This project is a web application developed for Damarco, a company specializing in the construction and renovation of spaces. I independently developed the frontend of the application, creating a modern and functional website that allows users to explore renovation services for bathrooms, kitchens, and more. Users can learn about the company, view service details, and easily request quotes. I implemented an attractive design with interactive carousels, smooth transitions, and animations, providing a dynamic and engaging user experience. Additionally, I participated in creating an administrative interface using Django and PostgreSQL with a colleague. This interface improves the management of customer inquiries and service requests, supporting the Damarco team in delivering high-quality service."
 },
 {
     project_image:I3,
     project_name:"Caribian Beauty Salon",
     project_url:"https://salon-keidy-frontend.vercel.app/",
-    code_url:"in process",
+    code_url:"https://github.com/RebeMustelierTrinchet/salon-keidy-frontend/tree/main/src",
     project__descripsion:"This project is a web application developed for Caribbean Beauty Salon, a salon offering a wide range of aesthetics, manicure, and hairdressing services. The website allows users to explore the various services available, get to know the team of stylists and professionals, and use a translation feature for greater accessibility."
 },
 {
@@ -37,8 +37,8 @@ export  const Projects = [
 {
     project_image:I5,
     project_name:"Liurka Infinity - Frontend Website",
-    project_url:"/",
-    code_url:"in process",
+    project_url:"https://www.liurka-infinity.com/",
+    code_url:"https://github.com/RebeMustelierTrinchet/liurca-consultory-frontend",
     project__descripsion:"Liurka Infinity is a frontend website designed with a focus on elegance and interactivity. This project features dynamic carousels and sophisticated visual touches, providing a smooth and engaging user experience. The design is crafted to capture visitors' attention and guide them through an intuitive interface. Additionally, we have integrated a contact form that sends messages directly to email, ensuring quick and efficient communication. The entire site is available in Spanish, allowing for a direct connection with our Hispanic audience."
 },
 

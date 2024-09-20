@@ -32,7 +32,7 @@ const Contact_Info = () => {
             
             {/* Enlaces sociales */}
             <div className={styles.btn_links}>
-              <a className={`${styles.social_link} ${styles.social_link_dribbble}`} href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+              <a className={`${styles.social_link} ${styles.social_link_dribbble}`} href="mailto:mustelierrebeca99@gmail.com"  target="_blank" rel="noopener noreferrer">
                 <CgMail className={styles.social_icon} />
               </a>
               <span className={styles.visit}>Go write me</span>
@@ -50,7 +50,7 @@ const Contact_Info = () => {
               <span className={styles.visit}>Go visit my Istagram</span>
             </div>
             <div className={styles.btn_links}>
-              <a className={`${styles.social_link} ${styles.social_link_linkedin}`} href="mailto:mustelierrebeca99@gmail.com">
+              <a className={`${styles.social_link} ${styles.social_link_linkedin}`} href="https://www.linkedin.com/in/rebecamusteliertrinchet">
                 <FaLinkedinIn className={ styles.social_icon} />
               </a>
               <span className={styles.visit}>Go visit my Linkedin</span>

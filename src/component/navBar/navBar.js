@@ -55,10 +55,10 @@ export default function NavBar(){
           </Link>
 
           <div className={styles.btn__social__media__container}>
-            <button className={styles.btn__social__media} href="/"><FaLinkedinIn className={styles.icon}/></button>
+            <button className={styles.btn__social__media} href="https://www.linkedin.com/in/rebecamusteliertrinchet"><FaLinkedinIn className={styles.icon}/></button>
             <button className={styles.btn__social__media} href="https://www.instagram.com/codingbecky/"><FaInstagram className={styles.icon}/></button>
             <button className={styles.btn__social__media} href="https://github.com/RebeMustelierTrinchet"><FaGithub className={styles.icon} /></button>
-            <button className={styles.btn__social__media} href="/emails"><CgMail className={styles.icon} /></button>
+            <button className={styles.btn__social__media} href="mailto:mustelierrebeca99@gmail.com" ><CgMail className={styles.icon} /></button>
           </div>
 
         </div>

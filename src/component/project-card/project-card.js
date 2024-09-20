@@ -25,19 +25,21 @@ export default function ProjectCard({ project }) {
             </div>
 
             <div className={styles.url__container}>
-            <Link to={project.project_url} className={styles.link}>
+              <Link to={project.project_url} className={styles.link} target="_blank" rel="noopener noreferrer">
                 <div className={styles.btn__container}>
                   <button className={styles.btn__url}>{'< Project >'}</button>
                   <div className={styles.btn__span}></div>
                   <div className={styles.btn__span__botom}></div>
                 </div>
-                </Link>
+              </Link>
 
+              <Link to={project.code_url} className={styles.link} target="_blank" rel="noopener noreferrer">
                 <div className={styles.btn__container}>
                   <button className={styles.btn__url}>{'< Code >'}</button>
                   <div className={styles.btn__span}></div>
                   <div className={styles.btn__span__botom}></div>
                 </div>
+              </Link>
             </div>
           </div>
         </div>

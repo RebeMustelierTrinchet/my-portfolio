@@ -6,7 +6,7 @@ import ParticlesBg from "../particlesBg/particlesBg";
 const titleMap = {
   bloque1: ["R", "e", "b", "e", "c", "a", ":"],
   bloque2: ["I", "n", "n", "o", "v", "a", "t", "i", "v", "e"],
-  bloque3: ["F", "r", "o", "n", "t", "e", "n", "d"],
+  bloque3: ["F", "u", "l", "l", "s", "t", "a", "c", "k"],
   bloque4: ["D", "e", "v", "e", "l", "o", "p", "e", "r"],
 };
 

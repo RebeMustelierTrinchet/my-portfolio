@@ -15,16 +15,16 @@ export default function Footer() {
                 <div className={styles.social__media}>
                     <h4>Follow Us</h4>
                     <div className={styles.icon__container}>
-                        <button href="/" aria-label="Facebook">
+                        <button href="https://www.linkedin.com/in/rebecamusteliertrinchet" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                             <FaLinkedinIn className={styles.icon} />
                         </button >
-                        <button  href="https://www.instagram.com/codingbecky/" aria-label="Instagram">
+                        <button  href="https://www.instagram.com/codingbecky/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                             <FaInstagram className={styles.icon} />
                         </button >
                         <button  href="/" aria-label="Github">
                             <FaGithub className={styles.icon} />
                         </button >
-                        <button  href="mailto:mustelierrebeca99@gmail.com" aria-label="Email">
+                        <button  href="mailto:mustelierrebeca99@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
                             <CgMail className={styles.icon} />
                         </button >
                     </div>
