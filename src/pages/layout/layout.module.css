@@ -5,9 +5,9 @@
     overflow: hidden;
     opacity: 0;
 
-    animation: apear 3s;
+    animation: apear 1s;
     animation-fill-mode: forwards;
-    animation-delay: 13s;
+    animation-delay: 6s;
 }
 
 @keyframes  apear {

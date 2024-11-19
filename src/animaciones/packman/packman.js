@@ -5,9 +5,6 @@ import Packman2 from './../../imagenes/animaciones/packman/Screenshot_2024-04-17
 import windows from './../../imagenes/animaciones/packman/png-clipart-logo-windows-xp-black-white-microsoft-windows-ultimate-logo-angle-white-removebg-preview.png'
 import food from './../../imagenes/animaciones/packman/Untitled.png'
 
-
-
-
 export default  function AnimationPackman() {
 
   const containers = [];
@@ -21,7 +18,6 @@ export default  function AnimationPackman() {
       </div>
     );
   }
-
   return (
       <div className={styles.maincontainer}>  
         <div className={styles.Packman_conteiner}>  
