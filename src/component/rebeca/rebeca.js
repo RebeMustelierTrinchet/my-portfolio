@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./rebeca.module.css";
-import R__Animation from "../../animaciones/R-animation/R-animation";
-import ParticlesBg from "../particlesBg/particlesBg";
 
 const titleMap = {
   bloque1: ["R", "e", "b", "e", "c", "a", ":"],

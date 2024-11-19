@@ -1,68 +1,54 @@
-import styles from './navBar.module.css'
-import {Link} from "react-router-dom"
+import styles from './navBar.module.css';
+import { Link } from 'react-router-dom';
+import { FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa6';
+import { CgMail } from 'react-icons/cg';
 
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-import { CgMail } from "react-icons/cg";
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+// Data for navigation links
+const navLinks = [
+    { to: "/", label: "Home", animationClass: styles.text__conteiner__animation__H },
+    { to: "/portfolio", label: "Portfolio", animationClass: styles.text__conteiner__animation__P },
+    { to: "/about_me", label: "About me", animationClass: styles.text__conteiner__animation__A },
+    { to: "/contact_us", label: "Contact Us", animationClass: styles.text__conteiner__animation__A },
+];
 
-import { FaLinkedinIn } from "react-icons/fa6";
+// Data for social media links
+const socialLinks = [
+    { href: "https://www.linkedin.com/in/rebecamusteliertrinchet", icon: <FaLinkedinIn className={styles.icon} /> },
+    { href: "https://www.instagram.com/codingbecky/", icon: <FaInstagram className={styles.icon} /> },
+    { href: "https://github.com/RebeMustelierTrinchet", icon: <FaGithub className={styles.icon} /> },
+    { href: "mailto:mustelierrebeca99@gmail.com", icon: <CgMail className={styles.icon} /> },
+];
 
-import { FaGithub } from "react-icons/fa6";
-
-
-export default function NavBar(){
-
+export default function NavBar() {
     return (
         <div className={styles.main__conteiner}>
+            {/* Navigation links */}
+            {navLinks.map(({ to, label, animationClass }, index) => (
+                <Link to={to} key={index}>
+                    <button className={`${styles.text__conteiner} ${animationClass}`}>
+                        <p className={styles.text}>{label}</p>
+                        <hr className={styles.line} />
+                        <div className={styles.text2__conteiner}>
+                            <p className={styles.text2}>{label}</p>
+                        </div>
+                    </button>
+                </Link>
+            ))}
 
-           <Link to ="/">
-          <button href="/" className={`${styles.text__conteiner} ${styles.text__conteiner__animation__H} `}>
-            <p className={styles.text}>Home</p>
-            <hr className={styles.line} />
-            <div className={styles.text2__conteiner}>
-                <p className={styles.text2}>Home</p>
+            {/* Social media buttons */}
+            <div className={styles.btn__social__media__container}>
+                {socialLinks.map(({ href, icon }, index) => (
+                    <a
+                        href={href}
+                        key={index}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.btn__social__media}
+                    >
+                        {icon}
+                    </a>
+                ))}
             </div>
-          </button>
-          </Link>
-          <Link to ="/portfolio">
-          <button href="/portfolio" className={`${styles.text__conteiner} ${styles.text__conteiner__animation__P}`}>
-            <p className={styles.text}>Portfolio</p>
-            <hr className={styles.line} />
-            <div className={styles.text2__conteiner}>
-                <p className={styles.text2}>Portfolio</p>
-            </div>
-          </button>
-          </Link>
-          <Link to ="/about_me">
-          <button href="/about_me" className={`${styles.text__conteiner} ${styles.text__conteiner__animation__A}`}>
-            <p className={styles.text}>About me</p>
-            <hr className={styles.line} />
-            <div className={styles.text2__conteiner}>
-                <p className={styles.text2}>About me</p>
-            </div>
-          </button>
-          </Link>
-
-          <Link to ="/contact_us">
-          <button href="/contact_us" className={`${styles.text__conteiner} ${styles.text__conteiner__animation__A}`}>
-            <p className={styles.text}>Contact Us</p>
-            <hr className={styles.line} />
-            <div className={styles.text2__conteiner}>
-                <p className={styles.text2}>Contact Us</p>
-            </div>
-          </button>
-          </Link>
-
-          <div className={styles.btn__social__media__container}>
-            <button className={styles.btn__social__media} href="https://www.linkedin.com/in/rebecamusteliertrinchet"><FaLinkedinIn className={styles.icon}/></button>
-            <button className={styles.btn__social__media} href="https://www.instagram.com/codingbecky/"><FaInstagram className={styles.icon}/></button>
-            <button className={styles.btn__social__media} href="https://github.com/RebeMustelierTrinchet"><FaGithub className={styles.icon} /></button>
-            <button className={styles.btn__social__media} href="mailto:mustelierrebeca99@gmail.com" ><CgMail className={styles.icon} /></button>
-          </div>
-
         </div>
     );
 }
-
-

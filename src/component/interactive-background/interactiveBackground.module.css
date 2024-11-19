@@ -67,26 +67,6 @@
   }
 }
 
-/* .image__container:hover .image{
-    cursor: pointer;
-    transition:  1s;
-    filter: grayscale(0) brightness(100%) drop-shadow(105px 5px 5px rgba(103, 146, 245, 0.5));
-    transform: translateX(-85px) rotateY(-0deg) !important;
-    
-} */
-
-/* .image__container .image{
-  cursor: pointer;
-  transition:  1s;
-  filter: grayscale(100%) brightness(100%) drop-shadow(55px 5px 5px rgba(103, 146, 245, 0.5));
-  transform: translateX(-85px) rotateY(-0deg) !important;
-  
-} */
-
-/* .image__container:hover{
-    border-radius:  50%
-} */
-
 .bola {
     width: 10px;
     height: 10px;

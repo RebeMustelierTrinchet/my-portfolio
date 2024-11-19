@@ -1,81 +1,108 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
-import { CgMail } from "react-icons/cg";
+import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn, FaPhoneVolume } from 'react-icons/fa';
+import { CgMail } from 'react-icons/cg';
 import { Button } from 'react-bootstrap';
-import { FaPhoneVolume } from "react-icons/fa6";
 import styles from './footer.module.css';
-import { FaGithub } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa6";
-import logo from './../../imagenes/logo/logo-original.png'
+import logo from './../../imagenes/logo/logo-original.png';
+
+// Mapa de redes sociales con iconos y enlaces
+const socialLinks = [
+  {
+    href: "https://www.linkedin.com/in/rebecamusteliertrinchet",
+    label: "LinkedIn",
+    icon: <FaLinkedinIn />
+  },
+  {
+    href: "https://www.instagram.com/codingbecky/",
+    label: "Instagram",
+    icon: <FaInstagram />
+  },
+  {
+    href: "https://github.com/username",
+    label: "Github",
+    icon: <FaGithub />
+  },
+  {
+    href: "mailto:mustelierrebeca99@gmail.com",
+    label: "Email",
+    icon: <CgMail />
+  }
+];
 
 export default function Footer() {
-    return (
-        <footer className={styles.footer}>
-            <div className={styles.footer__container}>
-                <div className={styles.social__media}>
-                    <h4>Follow Us</h4>
-                    <div className={styles.icon__container}>
-                        <button href="https://www.linkedin.com/in/rebecamusteliertrinchet" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                            <FaLinkedinIn className={styles.icon} />
-                        </button >
-                        <button  href="https://www.instagram.com/codingbecky/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                            <FaInstagram className={styles.icon} />
-                        </button >
-                        <button  href="/" aria-label="Github">
-                            <FaGithub className={styles.icon} />
-                        </button >
-                        <button  href="mailto:mustelierrebeca99@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
-                            <CgMail className={styles.icon} />
-                        </button >
-                    </div>
-                    <div className={styles.logo__conteiner}>
-                        <img src={logo} alt={logo} className={styles.logo}/>
-                    </div>
-                </div>
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.footer__container}>
+        {/* Sección de redes sociales */}
+        <div className={styles.social__media}>
+          <h4>Follow Us</h4>
+          <div className={styles.icon__container}>
+            {socialLinks.map(({ href, label, icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+              >
+                {icon}
+              </a>
+            ))}
+          </div>
+          <div className={styles.logo__container}>
+            <img src={logo} alt="Rebeca's logo" className={styles.logo} />
+          </div>
+        </div>
 
-                <div className={styles.social__media_movil}>
+        {/* Sección de redes sociales en móvil */}
+        <div className={styles.social__media_movil}>
+          <div className={styles.logo__container}>
+            <img src={logo} alt="Rebeca's logo" className={styles.logo} />
+          </div>
+          <h4>Follow Us</h4>
+          <div className={styles.icon__container}>
+            {socialLinks.map(({ href, label, icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+              >
+                <span className={styles.icon}>{icon}</span>
+              </a>
+            ))}
+          </div>
+        </div>
 
-                    <div className={styles.logo__conteiner}>
-                        <img src={logo} alt={logo} className={styles.logo}/>
-                    </div>
-                    <h4>Follow Us</h4>
-                    <div className={styles.icon__container}>
-                        <button href="https://www.facebook.com" aria-label="Facebook">
-                            <FaFacebookF className={styles.icon} />
-                        </button >
-                        <button  href="https://www.instagram.com" aria-label="Instagram">
-                            <FaInstagram className={styles.icon} />
-                        </button >
-                        <button  href="/" aria-label="Github">
-                            <FaGithub className={styles.icon} />
-                        </button >
-                        <button  href="mailto:mustelierrebeca99@gmail.com" aria-label="Email">
-                            <CgMail className={styles.icon} />
-                        </button >
-                    </div>
-                  
-                </div>
+        {/* Sección de navegación */}
+        <div className={styles.navigation}>
+          <h4>Quick Links</h4>
+          <nav>
+            <ul className={styles.nav__links}>
+              <li><Button className={styles.nav__button} href="/">Home</Button></li>
+              <li><Button className={styles.nav__button} href="/portfolio">Portfolio</Button></li>
+            </ul>
+          </nav>
+        </div>
 
-                <div className={styles.navigation}>
-                    <h4>Quick Links</h4>
-                    <nav>
-                        <ul className={styles.nav__links}>
-                            <li><Button className={styles.nav__button} href="/">Home</Button></li>
-                            <li><Button className={styles.nav__button} href="/portfolio">Portfolio</Button></li>
-                        </ul>
-                    </nav>
-                </div>
+        {/* Sección de contacto */}
+        <div className={styles.contact__info}>
+          <h4>Contact Us</h4>
+          <p>
+            <FaPhoneVolume size="18px" className={styles.icon} /> (346) 526-0235
+          </p>
+          <p>
+            <CgMail className={styles.icon} /> mustelierrebeca@gmail.com
+          </p>
+          <Button className={styles.contact__button} href="/contact_us">Text Us</Button>
+        </div>
+      </div>
 
-                <div className={styles.contact__info}>
-                    <h4>Contact Us</h4>
-                    <p><FaPhoneVolume size={"18px"} className={styles.icon} /> (346) 526-0235</p>
-                    <p><CgMail className={styles.icon} /> mustelierrebeca@gmail.com</p>
-                    <Button className={styles.contact__button} href="/contact-us">Text Us</Button>
-                </div>
-            </div>
-            <div className={styles.footer__bottom}>
-                <p>&copy; 2024 Rebeca All Rights Reserved.</p>
-            </div>
-        </footer>
-    );
+      {/* Pie de página */}
+      <div className={styles.footer__bottom}>
+        <p>&copy; 2024 Rebeca All Rights Reserved.</p>
+      </div>
+    </footer>
+  );
 }

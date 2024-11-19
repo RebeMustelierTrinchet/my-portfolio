@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./interactiveBackground.module.css";
-
 import Image from "./../../imagenes/openart-image_K2M8wZN4_1714065359128_raw-removebg-preview.png";
 
 export default function InteractiveBackground() {
@@ -66,13 +65,6 @@ export default function InteractiveBackground() {
         prevBolas.map((bola) => {
           let nuevaX = bola.x + bola.velocidadX;
           let nuevaY = bola.y + bola.velocidadY;
-
-          // Verificar límites del contenedor
-        //   if (nu   evaX < 0) nuevaX = Math.random() * contenedor.offsetWidth;
-        //   if (nuevaX > contenedor.offsetWidth) nuevaX = Math.random() * contenedor.offsetWidth;
-        //   if (nuevaY < 100) nuevaY = Math.random() * contenedor.offsetHeight;
-        //   if (nuevaY > contenedor.offsetHeight) nuevaY = Math.random() * contenedor.offsetHeight;
-
           return { ...bola, x: nuevaX, y: nuevaY };
         })
       );
@@ -90,7 +82,6 @@ export default function InteractiveBackground() {
   return (
     <div   ref={contenedorRef} className={styles.maincontainer}>
       <div  className={styles.image__container}>
-        {/* <div  className={styles.sub__image__container}></div> */}
         <img className={styles.image} src={Image} alt={"header image"} />
         <div  className={styles.bola__container}>
           {bolas.map((bola, index) => (

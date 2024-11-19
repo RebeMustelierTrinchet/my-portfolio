@@ -106,7 +106,6 @@
     align-items: center;
     width: 100%;
     height: auto;
-    /* background-image: linear-gradient(to bottom right, rgba(var(--color_primary), 1), rgba(var(--color_primary_dark), 1)); */
     transition: all 0.4s ease-out;
     background-color: transparent;
   }

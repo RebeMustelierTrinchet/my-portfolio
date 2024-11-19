@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "./my-project.module.css"
-import {useRef, useEffect} from 'react';
 import { Projects } from "../../const/projects";
 import Project_Card from "../project-card/project-card";
 

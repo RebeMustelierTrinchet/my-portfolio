@@ -1,7 +1,6 @@
 .maincontainer{
     width: 80px;
     height: 110px;
-    /* background-color: brown; */
     padding-left: 10px;
     display: flex;
     text-align: center;
@@ -9,7 +8,6 @@
     position: fixed;
     bottom: 50px;
     right: 85px;
-    /* overflow: hidden; */
 }
 
 .R__letter{
@@ -17,10 +15,8 @@
     font-size: 90px;
     color: white;
     -webkit-text-stroke: 2px  red;
-    
     animation: R-move 10s infinite;
     animation-timing-function: linear;
-    /* animation-delay: 1s; */
     z-index: 1;
 }
 
