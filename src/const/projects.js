@@ -8,7 +8,7 @@ export  const Projects = [
 {
     project_image:I1,
     project_name:"Helem Salom",
-    project_url:"https://helem-salom.live/",
+    project_url:"https://www.helem-salon.com/",
     code_url:"https://github.com/RebeMustelierTrinchet/helem-booking-salon-frontend/",
     project__descripsion: "This project is a web application developed for Helem Salom, a modern hair salon aiming to offer its clients an advanced digital experience. The website allows users to book appointments, explore the available services, consume a set of APIs from an Express.js server, and also includes a messaging service.",
     
