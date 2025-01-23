@@ -1,13 +1,13 @@
 @import url('./../..//const/colors.css');
 
 .body__conteiner{
-    height: 100vh;
+    min-height: 100vh;
     overflow: hidden;
-    opacity: 0;
+    opacity: 1;
 
-    animation: apear 1s;
+    /* animation: apear 1s;
     animation-fill-mode: forwards;
-    animation-delay: 5.5s;
+    animation-delay: 5.5s; */
 }
 
 @keyframes  apear {

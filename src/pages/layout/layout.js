@@ -30,7 +30,7 @@ export default function Layout({children}){
     return(
         <div className={styles.main__conteiner}>
             <div className={styles.animation__starting__conteiner}>
-                <AnimationStarting/>
+                {/* <AnimationStarting/> */}
             </div>
             <div onClick={toggleBodyFalse}  className={`${styles.nav_bar_disable} ${isActive ? styles.nav_bar_active : ''}`}>
                 <NavBar/>

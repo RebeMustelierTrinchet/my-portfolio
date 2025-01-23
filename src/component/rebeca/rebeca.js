@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./rebeca.module.css";
+import { Link } from 'react-router-dom';
 
 const titleMap = {
   bloque1: ["R", "e", "b", "e", "c", "a", ":"],
@@ -45,6 +46,11 @@ export default function Rebeca() {
           </div>
         ))}
       </div>
+      <Link to="/portfolio">
+      <button className={styles.btn_cont}>
+        My Portfolio
+      </button>
+      </Link>
     </div>
   );
 }
