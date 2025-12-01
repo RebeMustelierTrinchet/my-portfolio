@@ -21,7 +21,7 @@ export default function ProjectCard({ project }) {
             
             <div className={styles.text__container}>
                   <h1 className={styles.title}>{'< '}{project.project_name}{' >'}</h1>
-                <p className={styles.text}>{project.project__descripsion}</p>
+                <p className={styles.text}>{project.project__description}</p>
             </div>
 
             <div className={styles.url__container}>
